@@ -3,7 +3,9 @@ import './footer.styles.scss';
 
 const Footer = () => {
     return (
-        <p>MC.</p>
+        <div className='footer'>
+        <p>Martin Chammah © - 2019 </p>
+        </div>
     )
 }
 
