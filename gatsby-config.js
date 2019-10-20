@@ -1,3 +1,5 @@
+const path = require('path');
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -11,7 +13,17 @@ module.exports = {
     siteUrl: `https://www.martinchammah.com`
   },
   /* Your site config here */
-  plugins: [`gatsby-plugin-sass`]
+  plugins: [
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`
+      }
+    },
+    'gatsby-transformer-remark'
+]
 }
 
 

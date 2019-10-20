@@ -1,8 +1,21 @@
 import React from 'react';
 import './header.styles.scss';
-import {Link} from 'gatsby'
+import {Link, graphql, useStaticQuery} from 'gatsby'
+
+
 
 const Header = () => {
+
+    const data = useStaticQuery(graphql`
+       query {
+           site{
+               siteMetadata {
+                   title
+               }
+           }
+       }
+    `)
+
     return (
             <div>
             <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Open+Sans&display=swap" rel="stylesheet" />
@@ -10,7 +23,7 @@ const Header = () => {
 
                 <div className="header-main">
                         <div className="dev">
-                        <h1>Dev's Name</h1>
+                        <h1>{data.site.siteMetadata.title}</h1>
                         <span className="attr">Web designer</span>
                         <span className="dot">•</span>
                         <span className="attr">Architect</span>
@@ -24,7 +37,13 @@ const Header = () => {
                         <a href='https://www.linkedin.com/in/chammah/'><i className="fab fa-linkedin"></i></a>
                         <a href='https://youtube.com/codigoMate'><i className="fab fa-youtube"></i></a>
                         </div>
-                        <span className="pages-link"><Link to="/">Portfolio</Link>|<Link to="/about">About</Link></span>
+                        <span className="pages-link"><Link to="/">Portfolio</Link>
+                        |
+                        <Link to="/blog">Blog</Link>
+                        |
+                        <Link to="/about">About</Link>
+                        </span>
+
                         
                         <hr/>
                  </div>
