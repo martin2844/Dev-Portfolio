@@ -24,9 +24,9 @@ const Header = () => {
                         <i className="fab fa-linkedin"></i>
                         <i className="fab fa-youtube"></i>
                         </div>
-                        <span><Link to="/">Portfolio</Link>|<Link to="/about">About</Link></span>
+                        <span className="pages-link"><Link to="/">Portfolio</Link>|<Link to="/about">About</Link></span>
                         
-  
+                        <hr/>
                  </div>
             </div>
         
