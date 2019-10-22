@@ -1,13 +1,12 @@
-@media(min-width: 400px) {
+@media(min-width: 700px) {
     .main {
     
         display: flex;
         flex-direction: row;
-        
-        
+
     }
 
-
+ 
 }
 
 h2 {
@@ -108,7 +107,7 @@ h2 {
     }
 
     .iconos {
-        font-size: .75rem;
+        font-size: .8rem;
     }
 
 }
@@ -120,15 +119,15 @@ h2 {
  }
 
  .iconos {
-    font-size: .6rem;
+    font-size: .8rem;
 }
 }
 
 
-@media(max-width: 620px) {
+@media(max-width: 400px) {
 
     .iconos {
-        font-size: .5rem;
+        font-size: .6rem;
     }
 
 }
