@@ -1,6 +1,7 @@
 ---
 title: 'Third post'
 date:  '2019-10-04'
+sinopsis: "El tercer post, blu blu blu blu blu"
 
 
 ---

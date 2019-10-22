@@ -1,6 +1,7 @@
 ---
 title: 'First post'
 date:  '2019-10-01'
+sinopsis: "El primer post, bla bla bla bla bla"
 
 
 ---

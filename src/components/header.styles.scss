@@ -98,3 +98,10 @@ h1 {
   }
 }
 
+.nodecor {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: cornflowerblue;
+  }
+}
