@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import aboutStyle from './About.module.scss';
 import Img from 'gatsby-image';
 import {graphql} from 'gatsby'
+import {Helmet} from 'react-helmet';
 
 export const query = graphql`
 query {
@@ -23,6 +24,12 @@ const About = (props) => {
     console.log(query)
     return (
         <Layout>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Martin Chammah | About</title>
+                <meta name="description" content="About" />
+                <meta name="keywords" content="Acerca de Martin Chammah" />
+                </Helmet>
             <h2>Hola, me llamo Martin</h2>
 
             <div className={aboutStyle.main}>
@@ -63,13 +70,14 @@ const About = (props) => {
                 <img alt="nodeJs" className={aboutStyle.logo} src="./logos/nodejs-icon.svg" />
                 <img alt="Mongo" className={aboutStyle.logo} src="./logos/mongodb.png" />
                 <img alt="Sass" className={aboutStyle.logo} src="./logos/sass-1.svg" />
+                <img alt="HTML" className={aboutStyle.logo} src="./logos/html5.svg" />
                 </div>
 
            
                 <div className={aboutStyle.socialContainer}>
                 <p>Comunicate conmigo! mandame un mensaje</p>
                 <a className={aboutStyle.social} href="https://github.com/martin2844"><i className="fab fa-github"></i></a>
-            <a className={aboutStyle.social} href="https://www.instagram.com/codigo.mate/"><i className="fab fa-instagram"></i></a>
+            <a className={aboutStyle.social}  href='https://www.linkedin.com/in/chammah/'><i className="fab fa-linkedin"></i></a>
             <a className={aboutStyle.social} href="https://www.youtube.com/channel/UC9nNIxlNohIoIrjtC4ueIOA"><i className="fab fa-youtube"></i></a>
                 <a className={aboutStyle.social} href="https://www.twitter.com/codigomate"><i class="fab fa-twitter"></i></a>
                 </div>

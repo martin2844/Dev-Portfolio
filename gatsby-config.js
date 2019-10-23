@@ -22,9 +22,32 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
-    'gatsby-transformer-remark',
-    `gatsby-transformer-sharp`, 
-    `gatsby-plugin-sharp`
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false
+            }
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              destinationDir: `path/to/dir`,
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
+            }
+          }
+        ]
+      }
+  }
+   
 ]
 }
 

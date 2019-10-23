@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import {Link, graphql, useStaticQuery} from 'gatsby'
+import {Helmet} from 'react-helmet';
 
 
 const Blog = () => {
@@ -40,8 +41,14 @@ const Blog = () => {
     
 return (
     <Layout>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Martin Chammah | Blog</title>
+                <meta name="description" content="Blog" />
+                <meta name="keywords" content="Blog personal Martin Chammah" />
+                </Helmet>
     
-        <h1 className="opener">blog</h1>
+        <h1 className="opener">blog...</h1>
            {posts}
     </Layout>
 )

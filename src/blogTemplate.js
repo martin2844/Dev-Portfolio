@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from './components/Layout';
 import {graphql} from 'gatsby';
-
+import './blogStyles.scss'
 
 //export query so gatsby can grab it as a prop
 export const query = graphql`

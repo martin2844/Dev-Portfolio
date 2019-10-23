@@ -2,6 +2,7 @@ import React from "react";
 import Layout from '../components/Layout';
 import './index.styles.scss';
 import portfolioItems from '../components/portfolio-items';
+import {Helmet} from 'react-helmet';
 
 function renderFolio() {
   return  portfolioItems.map(({title, sinopsis, idx, desc, repo, live,img}) => {
@@ -35,6 +36,12 @@ const Index = () => {
     
     return (
         <Layout>
+              <Helmet>
+                <meta charSet="utf-8" />
+                <title>Martin Chammah | Portfolio</title>
+                <meta name="description" content="Portfolio" />
+                <meta name="keywords" content="Portfolio personal Martin Chammah" />
+                </Helmet>
             <h1 className="opener">Me gusta programar</h1>
             <p className="subtitle">Estos son algunos de los proyectos realizé por ahora. Mucho Javascript, algo de css. Fascinado por React.</p>
             {renderFolio()}
