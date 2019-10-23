@@ -1,4 +1,7 @@
 code {
     color: #33FF00;
     background-color: #000000;
+    display: block;
+    overflow: auto; /* Scrollbar are always visible */
+   
 }

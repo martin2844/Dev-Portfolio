@@ -17,7 +17,7 @@ const portfolioItems = [
         idx: 2
     },
     {
-        title: 'Dev Portfolio',
+        title: 'Dev Portfolio 1',
         sinopsis: 'Un starter para Gatsby, el mismo que use para esta página',
         desc: 'Mientras desarrollaba la web de faduense, decidi tomarme un tiempo para volver a Gatsby. Cree este Starter, que basicamente es un Portfolio minimalista, con el agregado de un Blog. Cada item del portfolio se pone en un array de JS, y a partir de un map se generan estos items automaticamente. También cuenta con una sección about.',
         img: './portfolio/devPortfolio.png',
@@ -28,7 +28,7 @@ const portfolioItems = [
     {
         title: 'ejs blog',
         sinopsis: 'Un blog hecho con node y mongoDB, usando como templeting EJS',
-        desc: 'Hecho con un backend de node, el front end es simple HTML, con templating en EJS, sumado a Bootsrap 4. Las caracteristicas principales que implemente son Autorización de usuarios con Passport, mongoose para el CRUD, pagination para los posts. Función de Archivo, función de filtro por tags y función de busqueda por palabras.',
+        desc: 'Hecho con un backend de node, el front end es simple HTML, con templating en EJS, sumado a Bootstrap 4. Diseño responsive. Las caracteristicas principales que implemente son Autorización de usuarios con Passport, mongoose para el CRUD, pagination para los posts. Función de Archivo, función de filtro por tags y función de busqueda por palabras.',
         img: './portfolio/ejs-blog.png',
         repo: 'https://github.com/martin2844/ejs-blog',
         live: 'https://my-ejs-blog.herokuapp.com/',
@@ -37,7 +37,7 @@ const portfolioItems = [
     {
         title: 'ejs - TODO',
         sinopsis: 'Una Todo list - integrando lo basico de Node + MongoDB',
-        desc: 'Hecha con un backend de node, el front end es simple HTML con Bootsrap. Interactua con una base mongoDB Atlas. De esa manera demostramos simplemente el CRUD con mongo, a partir de una interfaz simple',
+        desc: 'Hecha con un backend de node, el front end es simple HTML con Bootstrap 4. Interactua con una base mongoDB Atlas. De esa manera demostramos simplemente el CRUD con mongo, a partir de una interfaz simple',
         img: './portfolio/EJS.png',
         repo: 'https://github.com/martin2844',
         live: 'https://my-ejs-todo-list.herokuapp.com',
@@ -46,7 +46,7 @@ const portfolioItems = [
     {
         title: 'Bitcoin hoy',
         sinopsis: 'Una web app simple que muestra el valor al dia del bitcoin contra el ARS, y lo diferencia con el valor del dia anterior.',
-        desc: 'Node JS puro, y el front end muy simple HTML con Bootsrap. Interactua con la API de un sitio de BITCOIN usando calls de ajax, con promesas. Podria mejorarse usando async await.',
+        desc: 'Node JS puro, y el front end muy simple HTML con Bootstrap 4. Interactua con la API de un sitio de BITCOIN usando calls de ajax, con promesas. Podria mejorarse usando async await.',
         img: './portfolio/bitcoin.png',
         live: 'bitcoinhoy.com.ar',
         repo: 'https://github.com/martin2844',
