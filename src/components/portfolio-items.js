@@ -1,5 +1,14 @@
 const portfolioItems = [
     {
+        title: 'CV interactivo',
+        sinopsis: 'CV interactivo con DarkMode, Multilenguaje, en GasbyJS',
+        desc: 'Estoy buscando trabajo, entonces, decidí hacer un cv interáctivo, y como no podía ser diferente Elegí Gatsby JS como la plataforma.',
+        img: './portfolio/gatsby-cv-site.png',
+        repo: 'https://github.com/martin2844/gatsby-cv-site',
+        live: 'https://martin2844.github.io/gatsby-cv-site/',
+        idx: 0
+    },
+    {
         title: 'Faduense',
         sinopsis: 'Una web app en MERN stack para subir finales',
         desc: 'Como no hay ninguna pagina funcionando para subir examenes de las carreras de la fadu, decidi crear una web app para que los alumnos puedan subirlos y que queden organizados. Es basicamente una API en NODE la cual se relaciona con un front end de react. La api escribe a una Base de datos de Mongo. Tiene AUTH con passport, y 0Auth con google. 80% completa.',
