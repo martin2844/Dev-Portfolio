@@ -39,7 +39,7 @@ const portfolioItems = [
         sinopsis: 'Una Todo list - integrando lo basico de Node + MongoDB',
         desc: 'Hecha con un backend de node, el front end es simple HTML con Bootstrap 4. Interactua con una base mongoDB Atlas. De esa manera demostramos simplemente el CRUD con mongo, a partir de una interfaz simple',
         img: './portfolio/EJS.png',
-        repo: 'https://github.com/martin2844',
+        repo: 'https://github.com/martin2844/ejs-todo-list',
         live: 'https://my-ejs-todo-list.herokuapp.com',
         idx: 5
     },
@@ -49,7 +49,7 @@ const portfolioItems = [
         desc: 'Node JS puro, y el front end muy simple HTML con Bootstrap 4. Interactua con la API de un sitio de BITCOIN usando calls de ajax, con promesas. Podria mejorarse usando async await.',
         img: './portfolio/bitcoin.png',
         live: 'bitcoinhoy.com.ar',
-        repo: 'https://github.com/martin2844',
+        repo: 'https://github.com/martin2844/bitcoinHoy',
         idx: 6
     }
    
